@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website on Docker, Linux, and Containerization</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Website on Docker, Linux, and Containerization</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Website on Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="virtual.html">Virtualization</a>
+                        <a class="dropdown-item" href="container.html">Containerization</a>
+                        <a class="dropdown-item" href="vs.html">Virtualization vs Containerization</a>
+                        <a class="dropdown-item" href="web.html">Docker Webserver Tutorial</a>
+                        <a class="dropdown-item" href="linux.html">Linux Commands</a>
+                        <a class="dropdown-item" href="pycharm.html">Docker With PyCharm</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>Compare Virtualization and Containerization</h1>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtualization and containerization as mentioned above are similar in that they provide end users with efficient and cost effective access to computing resources as well as a way to run multiple applications simultaneously.  Each shares assets between “instances”, or sessions, thereby reducing the need to secure dedicated resources on an application by application basis. While the end game is similar, how each architecture accomplishes the goal varies, and makes each useful in particular scenarios</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As we saw in the example of virtualization, a software element called a Hypervisor sits on top of the host operating system, and runs each virtual machine, each with its own OS.  The Hypervisor, functioning rather like a traffic cop, allocates CPU and other resources to requesting virtual machines that are built on top on an as needed basis. Each application works off its own OS, and functions like a standalone machine. This is a labor intensive function, however, and the messaging and addressing that is required in order to interleave work adds overhead and thus drives down throughput and performance.   Stability can be affected as the CPU struggles to manage multiple jobs. </p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Containerization, by contrast, virtualizes the OS, eliminating all the intermediate OS needed to run each virtual machine. The single OS essentially runs each individual application is a discrete container, or containers, isolated from other functions and applications until a task is fully run.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So where virtual machines utilize a single process hub in the host OS, containers virtualize the process framework itself, replicating it, achieving thereby greater flexibility and options in the forms of device type (“bare metal”, cloud, or vm) throughput, performance and stability, given the singular OS and partitioning of work therein.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Which method the user elects is best driven by the desired goals in the environment in which the ecosystem is being used.  However, it must be noted that containerization – with it’s inherent recoverability capability, it’s ability to run multiple versions of the same program simultaneously for editing and test purposes, and it’s lean management of scarce resources, is perhaps on balance the more optimal architecture of the two for software development purposes.</p>
+    </div>
+
+</main><!-- /.container -->
+<!-- Bootstrap core JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
