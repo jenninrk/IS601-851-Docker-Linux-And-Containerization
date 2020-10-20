@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website on Docker, Linux, and Containerization</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Website on Docker, Linux, and Containerization</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Website on Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="virtual.html">Virtualization</a>
+                        <a class="dropdown-item" href="container.html">Containerization</a>
+                        <a class="dropdown-item" href="vs.html">Virtualization vs Containerization</a>
+                        <a class="dropdown-item" href="web.html">Docker Webserver Tutorial</a>
+                        <a class="dropdown-item" href="linux.html">Linux Commands</a>
+                        <a class="dropdown-item" href="pycharm.html">Docker With PyCharm</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>What Is Containerization?</h1>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Containerization by contrast very similar to virtualization in that computer resources are emulated, but it is different in that the resources that are emulated in virtualization are hardware in nature, and run on a single process, in the containerization environment the resources that are emulated are software in nature, specifically the operating system.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As implemented, containerization does not require duplication of operating systems in a one to one relationship with each running application, as it does in the virtualized environment, on top of the host computer OS.  Instead, a container “engine” is deployed on top of the host machine OS, to partition work at the application level and not the resource level.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Further, containerization is more flexible, able to run on “bare metal” configurations, cloud instances, or even virtual machines. Additional benefits to containerization include faster deployments, greater throughput, and increased reliability.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two of the major container management software engines available in the marketplace today include Docker and Kubernetes.  We will be working with these in future exercises.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some other benefits to containerization over virtual machines include multiple copies, scaling, Linux, and microservices.  Containers typically deploy multiple copies of processes, and these multiple copies allow for rapid recovery from failure points.  Scaling is easier also, as containerization is by design a much more streamlined process.  If enhanced with smart web services software, it can self-edit, and more closely manage resources more tightly given fluid usage levels. Linux, the de facto operating system used in building and using containers, adds to system flexibility and ease of use, as command line capability renders containers easy to build and run,  And finally, microservices assists in throughput reduction and performance enhancement, by reducing apps to smaller tasks performed through calls, rather than large processes requiring large resource allocation.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bottom line, containerization, like virtual machines, helps users achieve efficiencies and functionality without having to procure cost prohibitive and management intensive resources for one to one applications. But, unlike virtual machines, which can be overhead intensive on software necessary to resource management and applications handling, containerization also reduces overhead and throughput by minimizing software requirements to implement.  The result is similar efficiencies to virtual machines, but with improved performance, stability, and functionality.</p>
+    </div>
+
+</main><!-- /.container -->
+<!-- Bootstrap core JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
