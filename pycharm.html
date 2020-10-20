@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website on Docker, Linux, and Containerization</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Website on Docker, Linux, and Containerization</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Website on Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="virtual.html">Virtualization</a>
+                        <a class="dropdown-item" href="container.html">Containerization</a>
+                        <a class="dropdown-item" href="vs.html">Virtualization vs Containerization</a>
+                        <a class="dropdown-item" href="web.html">Docker Webserver Tutorial</a>
+                        <a class="dropdown-item" href="linux.html">Linux Commands</a>
+                        <a class="dropdown-item" href="pycharm.html">Docker With PyCharm</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>How to connect Docker with Pycharm to write python code</h1>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to File -> Settings</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Under Build, Execution, Deployment go to the Docker option</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click the + button to create a new entry</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since this is a windows machine choose Docker for Windows and you can leave the rest as their default options</p>
+        <p class="text-center"><img src="pics/settings.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once you are in your PyCharm project you will need both your python script as well as a docker file</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample python script</p>
+        <p class="text-center"><img src="pics/python_script.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample Docker File:  Your Dockerfile should include any package installation commands that will be needed to run the given script</p>
+        <p class="text-center"><img src="pics/dockerfile.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now once you have these files ready the next step is to add a Run/Debug configuration that will leverage the Docker</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can find this option to the left of the green triangle in the task bar</p>
+        <p class="text-center"><img src="pics/config_button.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then go to Add New Configuration and choose Docker File</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Give your configuration a name and image tag and select the name of the Dockerfile (in this case it’s just called Dockerfile)</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make sure the Run built image box is checked.  Then click apply and OK.</p>
+        <p class="text-center"><img src="pics/create_config.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you then click the green triangle button to run your script you will see your docker containers and build log in the pane below</p>
+        <p class="text-center"><img src="pics/build_log.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to see any output from the python script click over from the build log to the attached console</p>
+        <p class="text-center"><img src="pics/attached_console.PNG" class="img-fluid" alt="Responsive image"></p>
+    </div>
+
+</main><!-- /.container -->
+<!-- Bootstrap core JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
