@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website on Docker, Linux, and Containerization</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Website on Docker, Linux, and Containerization</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Website on Docker, Linux, and Containerization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="virtual.html">Virtualization</a>
+                        <a class="dropdown-item" href="container.html">Containerization</a>
+                        <a class="dropdown-item" href="vs.html">Virtualization vs Containerization</a>
+                        <a class="dropdown-item" href="web.html">Docker Webserver Tutorial</a>
+                        <a class="dropdown-item" href="linux.html">Linux Commands</a>
+                        <a class="dropdown-item" href="pycharm.html">Docker With PyCharm</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>How to setup a web server on your local computer using docker</h1>
+        <p class="lead">1) Welcome to my project on Docker, Linux, and Containerization</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pull an Ubuntu image from Dockerhub.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After logging into Docker, you can run “docker pull ubuntu” in your command line window.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use “docker images” to check existing Docker images on your computer.</p>
+        <p class="text-center"><img src="pics/ubuntu.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commit Changes To A Docker Image</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Run the Ubuntu image to start a Docker container, then log into this Ubuntu container:</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command: docker run -it ubuntu:latest /bin/bash</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install applications in this Ubuntu container.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update system using“apt-get update”.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install apache2 using “apt-get install apache2”.</p>
+        <p class="text-center"><img src="pics/commit.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exit Ubuntu container</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use command “exit”</p>
+        <p class="text-center"><img src="pics/exit.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commit container to create a new Docker image.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check the container using “docker ps -a”</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new Docker image using “docker commit your_container_id ubuntu-my_apache2”.</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ubuntu-my_apache2 is the name of a new Docker image.</p>
+        <p class="text-center"><img src="pics/create.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Share Data Between a Docker Container and Host</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using command “docker run -it -p 127.0.0.1:80:80 -v H:\Docker_tutorial\local_dir:/var/www/html ubuntu-my_apache2 /bin/bash”</p>
+        <p class="text-center"><img src="pics/share.PNG" class="img-fluid" alt="Responsive image"></p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restart Apache Server On Ubuntu</p>
+        <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start apache service using “/etc/init.d/apache2 restart” in your Docker container</p>
+        <p class="text-center"><img src="pics/apache_restart.PNG" class="img-fluid" alt="Responsive image"></p>
+
+    </div>
+
+</main><!-- /.container -->
+<!-- Bootstrap core JavaScript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
